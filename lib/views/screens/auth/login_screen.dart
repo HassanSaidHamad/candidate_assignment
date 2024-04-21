@@ -22,6 +22,24 @@ class _LoginScreenState extends State<LoginScreen> {
     return regex.hasMatch(email);
   }
 
+  // FUNCTION FOR VALIDATE PASSWORD
+  bool isPasswordStrong(String password) {
+    // Define criteria for a strong password
+    const minLength = 8;
+    final hasUppercase = RegExp(r'[A-Z]').hasMatch(password);
+    final hasLowercase = RegExp(r'[a-z]').hasMatch(password);
+    final hasDigits = RegExp(r'\d').hasMatch(password);
+    final hasSpecialCharacters =
+        RegExp(r'[!@#$%^&*(),.?":{}|<>]').hasMatch(password);
+
+    // Check if the password meets all criteria
+    return password.length >= minLength &&
+        hasUppercase &&
+        hasLowercase &&
+        hasDigits &&
+        hasSpecialCharacters;
+  }
+
   void _loginUser() async {
     // Validate email format
     if (!isEmailValid(_emailController.text)) {
@@ -29,6 +47,18 @@ class _LoginScreenState extends State<LoginScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Invalid email format.'),
+        ),
+      );
+      return;
+    }
+
+    // Validate password strength
+    if (!isPasswordStrong(_passwordController.text)) {
+      // Show error message for weak password
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+              'Password must be at least 8 characters long and contain uppercase letters, lowercase letters, numbers, and special characters.'),
         ),
       );
       return;
