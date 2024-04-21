@@ -14,15 +14,14 @@ This Flutter project aims to assess proficiency in Flutter, Git, and GitHub by c
 1.  Clone the Repository:<br>
     git clone https://github.com/HassanSaidHamad/candidate_assignment.git
 
-2.  Navigate to the Project Directory:
+2.  Navigate to the Project Directory:<br>
     cd your_repository or project name
 
-3.  Install Dependencies:
-    Open your cloned project with your favorite text editor, navigate to terminal and write "flutter pub get
-    "
+3.  Install Dependencies:<br>
+    Open your cloned project with your favorite text editor, navigate to terminal and write **flutter pub get**
 
-4.  Run the Application:
-    Again navigate to terminal and write "flutter run"
+4.  Run the Application:<br>
+    Again navigate to terminal and write **flutter run**
 
 # Usage
 
