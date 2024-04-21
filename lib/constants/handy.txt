@@ -1,0 +1,15 @@
+G
+
+g
+
++
+
+{}
+
+[]
+
+==
+
+Candidate assignment. This is my assignment or test that I have been given by company adminstration in order to know my development skills, like how I do know in flutter technology, how I code, how I use version control like git and so on. I have been given this task for 24 hours, so I tried to do my best to complete it on time.
+
+=>
