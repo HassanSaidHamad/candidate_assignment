@@ -21,7 +21,6 @@ class _HomeScreenState extends State<HomeScreen> {
   void getEmail() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     email = prefs.getString('email') ?? '';
-    // print('EMAIL: $email');
   }
 
   void _logOut() async {
@@ -29,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     await prefs.remove('email');
     await prefs.remove('address');
     await prefs.remove('password');
+    // await prefs.clear();
 
     // ignore: use_build_context_synchronously
     Navigator.pushReplacement(

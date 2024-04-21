@@ -18,14 +18,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
 
+    // FUNCTION FOR VALIDATE EMAIL
     bool isEmailValid(String email) {
       // Regular expression for email validation
       final RegExp regex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
       return regex.hasMatch(email);
     }
 
+    // FUNCTION FOR VALIDATE PASSWORD
     bool isPasswordStrong(String password) {
       // Define criteria for a strong password
       const minLength = 8;
