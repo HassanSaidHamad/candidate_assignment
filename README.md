@@ -1,12 +1,13 @@
 # Project Title
 
-Flutter Login and Registration Feature
-...This project demonstrate the iplementation of login and
+## Flutter Login and Registration Feature
+
+This project demonstrate the iplementation of login and
 registration feature with local storage for data persistence. This flutter project is designed to assess the proficency of Flutter, Git and Github by implementing a login and registration feature with local storage for data persistence.
 
 # Project Description
 
-...This Flutter project aims to assess proficiency in Flutter, Git, and GitHub by creating a login and registration feature with local storage for data persistence. The project requires candidates to build a Flutter application that allows users to register with their email address and password, log in securely, and handle authentication errors gracefully. The use of local storage, such as shared_preferences, is necessary for storing user credentials securely on the device. Candidates are expected to follow Flutter best practices for UI design, code organization, and documentation.
+This Flutter project aims to assess proficiency in Flutter, Git, and GitHub by creating a login and registration feature with local storage for data persistence. The project requires candidates to build a Flutter application that allows users to register with their email address and password, log in securely, and handle authentication errors gracefully. The use of local storage, such as shared_preferences, is necessary for storing user credentials securely on the device. Candidates are expected to follow Flutter best practices for UI design, code organization, and documentation.
 
 # Installation
 
